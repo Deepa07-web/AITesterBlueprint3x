@@ -1,0 +1,37 @@
+[
+  {
+    "scenarioTid": "TC_002",
+    "description": "Valid email, incorrect password",
+    "email": "PLACEHOLDER_VALID_EMAIL",
+    "password": "PLACEHOLDER_WRONG_PASSWORD",
+    "expectedOutcome": "rejected"
+  },
+  {
+    "scenarioTid": "TC_003",
+    "description": "Unregistered email, any password",
+    "email": "PLACEHOLDER_UNREGISTERED_EMAIL",
+    "password": "AnyPassword123",
+    "expectedOutcome": "rejected"
+  },
+  {
+    "scenarioTid": "TC_004",
+    "description": "Empty email field",
+    "email": "",
+    "password": "PLACEHOLDER_VALID_PASSWORD",
+    "expectedOutcome": "blocked"
+  },
+  {
+    "scenarioTid": "TC_005",
+    "description": "Empty password field",
+    "email": "PLACEHOLDER_VALID_EMAIL",
+    "password": "",
+    "expectedOutcome": "blocked"
+  },
+  {
+    "scenarioTid": "TC_014",
+    "description": "Malformed email format",
+    "email": "user@",
+    "password": "PLACEHOLDER_VALID_PASSWORD",
+    "expectedOutcome": "rejected"
+  }
+]

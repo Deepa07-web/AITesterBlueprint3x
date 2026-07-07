@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s -i \"https://restful-booker.herokuapp.com/booking?firstname=NoSuchPerson12345&lastname=NoSuchLast\")"
+      "Bash(curl -s -i \"https://restful-booker.herokuapp.com/booking?firstname=NoSuchPerson12345&lastname=NoSuchLast\")",
+      "Bash(git commit -m ' *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\apache-maven-3.9.16\\\\bin\\\\mvn.cmd\" -version)"
     ]
   }
 }

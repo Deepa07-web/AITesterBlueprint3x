@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VWO-Login-Dashboard-Suite" parallel="classes" thread-count="2" verbose="1">
+
+    <listeners>
+        <listener class-name="com.vwo.framework.listeners.TestListener"/>
+        <listener class-name="com.vwo.framework.listeners.RetryTransformer"/>
+    </listeners>
+
+    <test name="Login-Tests">
+        <classes>
+            <class name="com.vwo.framework.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Dashboard-Tests">
+        <classes>
+            <class name="com.vwo.framework.tests.DashboardTest"/>
+        </classes>
+    </test>
+
+</suite>
